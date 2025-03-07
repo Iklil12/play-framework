@@ -1,0 +1,46 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@title</title>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="prodi">
+            <p>Teknik Informatika</p>
+        </div>
+        <div class="utama">
+            <a href="@routes.HomeController.index()">Beranda</a>
+            <a href="@routes.HomeController.manajemenTugas()">Manajemen Tugas</a>
+            <a href="@routes.HomeController.index()">Tambah Tugas</a>
+        </div>
+        <div class="profil">
+            <a href="@routes.HomeController.index()">IKLILUL UYUN</a>
+            <a href="@routes.HomeController.index()">Dosen</a>
+        </div>    
+    </nav>
+    <div class="outline">
+        <div class="content">
+            <div class="layout">
+                <!-- Konten utama -->
+                <main class="container">
+                    @content
+                    
+                </main>
+            </div>
+            
+        </div>    
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Manajemen Tugas - Teknik Informatika</p>
+            <p>Created by Iklilul Uyun</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

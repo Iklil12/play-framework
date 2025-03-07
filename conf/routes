@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                  controllers.HomeController.index()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /manajemen-tugas       controllers.HomeController.manajemenTugas()
+
+
+GET     /tugas1if1bpsbf             controllers.HomeController.tugas1if1bpsbf
+GET     /tugas2if1bpsbf             controllers.HomeController.tugas2if1bpsbf
+GET     /tugas3if1bpsbf             controllers.HomeController.tugas3if1bpsbf
+GET     /tugas4if1bpsbf             controllers.HomeController.tugas4if1bpsbf
+GET     /tugas1if1apsbf             controllers.HomeController.tugas1if1apsbf
+GET     /tugas1if2apsbf             controllers.HomeController.tugas2if1apsbf
+GET     /tugas1if3apsbf             controllers.HomeController.tugas3if1apsbf
+GET     /tugas1if4apsbf             controllers.HomeController.tugas4if1apsbf
+GET     /index            controllers.HomeController.index
+GET     /manajemen-tugas              controllers.HomeController.manajemenTugas()
+GET     /manajemen-tugas/psbf         controllers.HomeController.psbf()
+GET     /IF1B            controllers.HomeController.IF1B()
+GET     /IF1A            controllers.HomeController.IF1A()
+# conf/routes
+
+
+
+

@@ -1,0 +1,17 @@
+# Logs
+logs/
+*.log
+RUNNING_PID
+
+# Target
+target/
+
+# IntelliJ IDEA
+/.idea/
+/.idea_modules/
+/.classpath
+/.project
+/.settings/
+
+# Build Server Protocol
+/.bsp/
